@@ -4,75 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Köp och Sälj Båtar</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f8fb;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #004c70;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav {
-            background-color: #0077a6;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 1rem;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        main {
-            padding: 2rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        .boat-card {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-        .boat-card img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-        }
-        .boat-card .content {
-            padding: 1rem;
-        }
-        .boat-card h3 {
-            margin: 0 0 0.5rem 0;
-        }
-        .boat-card p {
-            margin: 0.5rem 0;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #004c70;
-            color: white;
-            margin-top: 2rem;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
         <h1>Köp och Sälj Båtar</h1>
-        <p>Din marknadsplats för begagnade båtar och trailers</p>
+        <p>Din marknadsplats för nya och begagnade båtar</p>
     </header>
     <nav>
         <a href="#">Hem</a>
         <a href="#">Till salu</a>
         <a href="#">Lägg till båt</a>
-        <a href="#">Kontakt</a>
+        <a href="#kontakt">Kontakta oss</a>
     </nav>
     <main>
         <div class="boat-card">
@@ -91,9 +34,20 @@
                 <p>Göteborg</p>
             </div>
         </div>
+
+        <section class="contact-section" id="kontakt">
+            <h2>Kontakta oss</h2>
+            <p>Har du frågor eller vill du lägga upp en annons? Fyll i formuläret nedan så hör vi av oss!</p>
+            <form>
+                <input type="text" placeholder="Ditt namn" required>
+                <input type="email" placeholder="Din e-post" required>
+                <textarea rows="5" placeholder="Ditt meddelande" required></textarea>
+                <button type="submit">Skicka</button>
+            </form>
+        </section>
     </main>
     <footer>
-        &copy; Freddes båtar
+        &copy; 2025 Båtmarknaden Sverige
     </footer>
 </body>
 </html>
