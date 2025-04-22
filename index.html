@@ -3,41 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Köp och Sälj Båtar</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Båtmarknaden - Köp & Sälj Båtar</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Köp och Sälj Båtar</h1>
-        <p>Din marknadsplats för nya och begagnade båtar</p>
+        <h1>Välkommen till Båtmarknaden</h1>
+        <p>Köp och sälj båtar och trailers med enkelhet</p>
     </header>
     <nav>
-        <a href="#">Hem</a>
-        <a href="#">Till salu</a>
-        <a href="#">Lägg till båt</a>
+        <a href="#hem">Hem</a>
+        <a href="#kop">Köpa båt</a>
+        <a href="#salj">Sälja båt</a>
         <a href="#kontakt">Kontakta oss</a>
     </nav>
     <main>
-        <div class="boat-card">
-            <img src="images/båt1.jpg" alt="Båt 1">
-            <div class="content">
-                <h3>Snabbgående Motorbåt</h3>
-                <p>Pris: 150 000 kr</p>
-                <p>Stockholm</p>
+        <section id="hem">
+            <h2>Hitta din drömbåt</h2>
+            <p>Vi erbjuder ett brett sortiment av båtar och trailers. Allt från privatpersoner och handlare.</p>
+        </section>
+
+        <section id="kop">
+            <h2>Köpa båt</h2>
+            <p>Enkel sökning och filtrering gör det lätt att hitta rätt för dig.</p>
+            <div class="boat-listing">
+                <div class="boat-card">
+                    <img src="images/båt1.jpg" alt="Motorbåt">
+                    <h3>Yamarin 63 DC</h3>
+                    <p>2020, 150 hk Yamaha, 280 000 kr</p>
+                </div>
+                <div class="boat-card">
+                    <img src="images/båt2.jpg" alt="Segelbåt">
+                    <h3>Bavaria Cruiser 37</h3>
+                    <p>2018, 3 kabiner, 950 000 kr</p>
+                </div>
+                <div class="boat-card">
+                    <img src="images/båt3.jpg" alt="Fiskebåt">
+                    <h3>Alumacraft 165</h3>
+                    <p>2015, 60 hk Mercury, 120 000 kr</p>
+                </div>
             </div>
-        </div>
-        <div class="boat-card">
-            <img src="images/båt2.jpg" alt="Båt 2">
-            <div class="content">
-                <h3>Segelbåt 27 fot</h3>
-                <p>Pris: 95 000 kr</p>
-                <p>Göteborg</p>
-            </div>
-        </div>
+        </section>
+
+        <section id="salj">
+            <h2>Sälja båt</h2>
+            <p>Vi hjälper dig nå ut till tusentals köpare. Publicera din annons snabbt och enkelt.</p>
+        </section>
 
         <section class="contact-section" id="kontakt">
             <h2>Kontakta oss</h2>
-            <p>Har du frågor eller vill du lägga upp en annons? Fyll i formuläret nedan så hör vi av oss!</p>
+            <p>Har du frågor eller funderingar? Skicka ett meddelande till oss!</p>
+            <p>Telefon: <a href="tel:0762968027">076 296 80 27</a></p>
+            <p>E-post: <a href="mailto:info@batmarknaden.se">info@batmarknaden.se</a></p>
             <form>
                 <input type="text" placeholder="Ditt namn" required>
                 <input type="email" placeholder="Din e-post" required>
@@ -47,7 +64,7 @@
         </section>
     </main>
     <footer>
-        &copy; 2025 Båtmarknaden Sverige
+        <p>&copy; 2025 Båtmarknaden Sverige. Alla rättigheter förbehållna.</p>
     </footer>
 </body>
 </html>
